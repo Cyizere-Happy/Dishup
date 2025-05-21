@@ -1,0 +1,56 @@
+.about {
+    padding-left: 9%;
+    padding-right: 9%;
+    margin: 100px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-left {
+    flex-basis: 40%;
+    position: relative;
+    width: 450px;  /* Added fixed width container */
+    height: 300px; /* Added fixed height container */
+}
+
+/* Style for both video and image */
+.about-left video,
+.about-left .image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.about-right {
+    flex-basis: 53%;
+}
+
+.play-icon {
+    position: absolute;
+    width: 60px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    z-index: 1;
+}
+
+.about h3 {
+    font-weight: 600;
+    font-size: 16px;
+    color: rgba(0,0,0,0.8);
+}
+
+.about h2 {
+    font-size: 35px;
+    color: rgba(0,0,0,0.8);
+    margin: 10px 0;
+    max-width: 400px;
+}
+
+.about p {
+    color: rgba(0,0,0,0.8);
+    margin-bottom: 15px;
+}

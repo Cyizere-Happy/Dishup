@@ -1,0 +1,48 @@
+.container{
+    margin: 90px auto;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left:5%;
+    padding-right:5%;
+}
+
+.service img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+}
+
+.service{
+    flex-basis: 31%;
+    position:relative;
+}
+
+.caption{
+    border-radius: 10px;
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    opacity: 0;
+    padding-top: 70%;
+    transition: 0.7s;
+
+}
+.caption img{
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+.service:hover .caption{
+    opacity: 1;
+    padding-top: 0;
+}
